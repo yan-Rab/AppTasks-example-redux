@@ -20,13 +20,14 @@ const Landing = () => {
                     <IoMdAddCircle size = {40} color = '#A1B0FD'  />
                 </button>
                 
-               <ModalAddTask />
+              
             </Header>
 
             <TaskList>
                 {tasks.length ? tasks.map(task => (
                     <TasktItem 
-                    key = {task.description} 
+                    key = {task.id} 
+                    id = {task.id}
                     study = {task.study} 
                     time = {task.time} 
                     description = {task.description} />
@@ -39,7 +40,7 @@ const Landing = () => {
                
             </TaskList>
            
-
+            <ModalAddTask />
         </Container>
     )
 }

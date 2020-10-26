@@ -1,6 +1,9 @@
 import React, {useState} from 'react'
 import {useDispatch} from 'react-redux'
+import uuid from 'react-uuid'
+
 import {Input, ContainerForm, Select} from './styles'
+
 const ModalAddTask = () => {
     const dispatch = useDispatch()
 
@@ -12,8 +15,11 @@ const ModalAddTask = () => {
 
     function handleAddTask(event){
       event.preventDefault()
- 
-      dispatch({type: 'ADD_TASK', task: taskData})
+      const data = {
+        ...taskData,
+        id: uuid()
+      }
+      dispatch({type: 'ADD_TASK', task: data})
     }
 
     return(
