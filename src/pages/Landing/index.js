@@ -14,7 +14,7 @@ const Landing = () => {
     return(
         <Container>
             <Header>
-                <img src = {logo} />
+                <img src = {logo} alt = 'Study'/>
 
                 <button type="button" style = {{background: 'none', outline: 'none'}} data-toggle="modal" data-target="#exampleModal">
                     <IoMdAddCircle size = {40} color = '#A1B0FD'  />

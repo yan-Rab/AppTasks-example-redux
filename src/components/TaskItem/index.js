@@ -7,7 +7,7 @@ const TaskItem = ({time, description, study}) => {
     const dispatch = useDispatch()
 
     function handleDeleteTask(id){
-        dispatch({type: 'DELETE_TASK', id})
+        dispatch({type: 'DELETE_TASK', taskId: id})
     }
 
     return (
@@ -17,6 +17,7 @@ const TaskItem = ({time, description, study}) => {
                 onClick = {() => handleDeleteTask(description) }
                 color = '#efefef' 
                 size = {20} 
+                alt = 'trash'
                 style = {{marginBottom: '10px', alignSelf: 'flex-end'}}
                 />
 

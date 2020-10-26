@@ -19,7 +19,7 @@ min-width: 45%;
 margin: 10px;
 max-width: 100%;
 width: 45%;
-border-radius: 6px;
+border-radius: 10px;
 
 `
 
@@ -31,6 +31,6 @@ export const Select = styled.select`
     width: 45%;
     padding-left: 5px;
     padding-right: 5px;
-    border-radius: 6px;
+    border-radius: 10px;
 
 `

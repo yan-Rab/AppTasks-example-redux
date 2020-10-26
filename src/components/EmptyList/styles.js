@@ -3,10 +3,10 @@ import styled from 'styled-components'
 export const Container = styled.div`
 display: flex;
 margin-top: 40px;
-padding: 20px;
+padding: 30px;
 justify-content: center;
 align-items: center;
-width: calc(35vw + 50px);
+width: 50%;
 height: calc(20vh + 20px);
 border: 2px dashed white;
 border-radius: 10px;

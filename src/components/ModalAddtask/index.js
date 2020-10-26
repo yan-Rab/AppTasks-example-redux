@@ -12,7 +12,7 @@ const ModalAddTask = () => {
 
     function handleAddTask(event){
       event.preventDefault()
-      console.log(taskData)
+ 
       dispatch({type: 'ADD_TASK', task: taskData})
     }
 
@@ -35,8 +35,8 @@ const ModalAddTask = () => {
                   type = 'time' 
                   onChange = {(e) => setTaskData({...taskData, time: e.target.value}) }/>
 
-                  <Select onChange = {(e) => setTaskData({...taskData, study: e.target.value})}>
-                    <option selected hidden>Matérias</option>
+                  <Select value = {taskData.study} onChange = {(e) => setTaskData({...taskData, study: e.target.value})}>
+                    <option hidden>Matérias</option>
                     <option>Português</option>
                     <option>Matemática</option>
                     <option>Biologia</option>
